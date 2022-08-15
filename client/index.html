@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://kit.fontawesome.com/ec27983ed5.js" crossorigin="anonymous"></script>
     <title>Back End Assessment</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
-  <body class="container">
+  <body class="padding1">
     <button id="complimentButton">Get a compliment</button>
     <button id="fortuneButton">Get a fortune</button>
+
+    <div id="quote-container">
+        <button id="quote-btn">Generate a random quote</button>
+        <p id="quote"></p>
+        <p id="author"></p>
+    </div>
+
+    <section>
+      <h1>WAYS TO INSPIRE OTHERS</h1>
+      
+      <form id="form" class="box padding" action="">
+        <p>How do you keep yourself inspired to achieve your goals?</p>
+        <input id="inspiration-input" type="text">
+        <p>Add Image URL</p>
+        <input id="image-input" type="text">
+        <p>Rating:</p>
+        <input type="radio" id="one" name="rating" value="1">
+        <label for="one">1</label><span>&nbsp&nbsp</span>
+        <input type="radio" id="two" name="rating" value="2">
+        <label for="two">2</label><span>&nbsp&nbsp</span>
+        <input type="radio" id="three" name="rating" value="3">
+        <label for="three">3</label><span>&nbsp&nbsp</span>
+        <input type="radio" id="four" name="rating" value="4">
+        <label for="four">4</label><span>&nbsp&nbsp</span>
+        <input type="radio" id="five" name="rating" value="5">
+        <label for="five">5</label><span>&nbsp&nbsp</span>
+        <button id="submit-btn" class="block">Submit</button>
+      </form>
+
+      <main class="flex padding2"></main>
+    </section>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>

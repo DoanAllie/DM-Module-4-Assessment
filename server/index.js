@@ -8,12 +8,20 @@ app.use(cors());
 app.use(express.json());
 
 const { getCompliment,
-        getFortune
-} = require('./controller')
+        getFortune,
+        getAllInspirations,
+        deleteInspiration,
+        createInspiration,
+        updateInspiration,
+} = require('./controller.js')
 
 
 app.get("/api/compliment", getCompliment);
-app.get("/api/fortune", getFortune);
+app.get('/api/fortune', getFortune);
+app.get('/api/inspirations', getAllInspirations)
+app.delete('/api/inspirations/:id', deleteInspiration)
+app.post('/api/inspirations', createInspiration)
+app.put('/api/inspirations/:id', updateInspiration)
 
 
 
